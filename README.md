@@ -7,6 +7,12 @@
 2. "갈비집" 검색시 화면
 <img src="https://user-images.githubusercontent.com/51894013/197547040-ee3a4fa0-aa4b-44a3-bcde-396d0ee3553f.png">
 
+2-1. "삼겹살" 검색시 화면
+<img src="https://user-images.githubusercontent.com/51894013/197548739-ff63ce1e-2725-48df-8f68-8ff7efccebf3.png">
+
+2-2. "스테이크" 검색시 화면
+<img src="https://user-images.githubusercontent.com/51894013/197549371-9c771981-6026-4724-95c9-4c38f4c9594f.png">
+
 3. "갈비집" 검색 결과에서 위시리스트 추가시 화면
 <img src="https://user-images.githubusercontent.com/51894013/197547333-a46d1f3d-e9b5-4c07-97d2-1cad084853c6.png">
 
