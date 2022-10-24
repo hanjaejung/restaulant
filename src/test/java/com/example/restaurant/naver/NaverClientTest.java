@@ -14,7 +14,7 @@ public class NaverClientTest {
 
     @Test
     public void searchLocalTest(){
-
+        //갈비집을 검색하여 결과값을 객체로 로컬값을 잘 받아오는지 테스트
         var search = new SearchLocalReq();
         search.setQuery("갈비집");
 
@@ -24,7 +24,7 @@ public class NaverClientTest {
 
     @Test
     public void searchImageTest(){
-
+        //갈비집을 검색하여 결과값을 객체로 이미지 정보를 잘 받아오는지 테스트
         var search = new SearchImageReq();
         search.setQuery("갈비집");
 
