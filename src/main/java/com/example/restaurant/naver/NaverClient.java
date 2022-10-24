@@ -29,19 +29,21 @@ public class NaverClient {
     @Value("${naver.url.search.image}")
     private String naverImageSearchUrl;
 
+    //네이버Api를 연동하기 위한 메소드
     public SearchLocalRes searchLocal(SearchLocalReq searchLocalReq){
         var uri = UriComponentsBuilder.fromUriString(naverLocalSearchUrl)
                 .queryParams(searchLocalReq.toMultiValueMap())
                 .build()
                 .encode()
                 .toUri();
-
+        //헤더값 세팅
         var headers = new HttpHeaders();
         headers.set("X-Naver-Client-Id", naverClientId);
         headers.set("X-Naver-Client-Secret", naverClientSecret);
         headers.setContentType(MediaType.APPLICATION_JSON);
 
         var httpEEntity = new HttpEntity<>(headers);
+        //리턴값 타입 설정(SearchLocalRes객체)
         var responseType = new ParameterizedTypeReference<SearchLocalRes>(){};
 
         var responseEntity = new RestTemplate().exchange(
