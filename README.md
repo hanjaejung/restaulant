@@ -1,6 +1,6 @@
 # restaulant
 네이버 지역검색 API를 활용한 맛집 List 만들기
-=> 간단히 db에 저장된 첫데이터만 찾을때 for문 대신 java stream을 쓰니 소스가 간편해지며 가동성이 좋은것 같습니다.
+간단한 느낀점 => 간단히 db에 저장된 첫데이터만 찾을때 for문 대신 java stream을 쓰니 소스가 간편해지며 가동성이 좋은것 같습니다.
 
 1. 첫 구동시 화면
 <img src="https://user-images.githubusercontent.com/51894013/197546491-91df230e-64ba-4a98-a605-c5a41761467b.png">
