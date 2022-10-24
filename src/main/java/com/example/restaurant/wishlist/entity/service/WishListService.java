@@ -60,7 +60,8 @@ public class WishListService {
     public WishListDto add(WishListDto wishListDto) {
         var entity = dtoToEntity(wishListDto);
         var saveEntity = wishListRepository.save(entity);
-        return entityToDto(saveEntity);
+        return entityToDto(saveEntity); //DB에 저장시 DB에 저장할때 entity객체에 저장하기 때문에
+        // dto객체로 다시 변환해주는 작업도 필요함니다
     }
 
     private WishListEntity dtoToEntity(WishListDto wishListDto){
