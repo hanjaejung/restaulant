@@ -12,7 +12,7 @@ public class WishListRepositoryTest {
 
     @Autowired
     private WishListRepository wishListRepository;
-
+    //DB CRUD 테스트
     @Test
     public WishListEntity create(){
         var wishList = new WishListEntity();
