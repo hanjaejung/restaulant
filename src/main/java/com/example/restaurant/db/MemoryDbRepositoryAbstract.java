@@ -12,13 +12,13 @@ abstract public class MemoryDbRepositoryAbstract<T extends MemoryDbEntity> imple
 
     @Override
     public Optional<T> findById(int index) {
-    //    return Optional.empty();
+        //api 검색 결과 중 첫번째 결과만 보기 위해 findFirst메소드 사용
         return db.stream().filter(it -> it.getIndex() == index).findFirst();
     }
 
     @Override
     public T save(T entity) {
-
+        //db에 저장되어 있는 값과 저장할 값을 비교하기 위한 stream().filter()
         var optionalEntity  = db.stream().filter(it -> it.getIndex() == entity.getIndex()).findFirst();
 
         if(optionalEntity.isEmpty()){
