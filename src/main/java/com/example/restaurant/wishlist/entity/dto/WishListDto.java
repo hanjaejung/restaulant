@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 public class WishListDto{
+    //계층(Layer) 간 데이터 교환이 이루어질 수 있도록 하는 객체
     private Integer index;
     private String title;                   //음식명, 장소명
     private String category;                //카테고리
