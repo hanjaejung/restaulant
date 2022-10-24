@@ -14,6 +14,7 @@ public class WishListServiceTest {
 
     @Test
     public void searchTest(){
+        //클라이언트 테스트를 바탕으로 이미지와 로컬검색을 잘 받아오는지 테스트
         var result  = wishListService.search("갈비집");
         System.out.println(result);
         Assertions.assertNotNull(result);
