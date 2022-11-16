@@ -33,12 +33,12 @@ public class ApiController {
     }
 
     @DeleteMapping("/{index}")
-    public void delete(@PathVariable int index){ //원하는 list 하나를 삭제 하는 api
+    public void delete(@PathVariable Long index){ //원하는 list 하나를 삭제 하는 api
         wishListService.delete(index);
     }
 
     @PostMapping("/{index}")
-    public void addVisit(@PathVariable int index){ //원하는 리스트중 하나의 방문수를 올릴수 있는 api
+    public void addVisit(@PathVariable Long index){ //원하는 리스트중 하나의 방문수를 올릴수 있는 api
         wishListService.addVisit(index);
     }
 

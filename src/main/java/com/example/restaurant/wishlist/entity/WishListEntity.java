@@ -1,16 +1,25 @@
 package com.example.restaurant.wishlist.entity;
 
 import com.example.restaurant.db.MemoryDbEntity;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @NoArgsConstructor
+//@RequiredArgsConstructor
 @AllArgsConstructor
 @Data
-public class WishListEntity extends MemoryDbEntity {
+@ToString(callSuper = true)
+@Builder
+@Entity//pk값을 설정해주지 않으면 오류가 생긴다
+public class WishListEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     //실제 DB 테이블과 매핑되는 핵심 클래스
     private String title;                   //음식명, 장소명
     private String category;                //카테고리

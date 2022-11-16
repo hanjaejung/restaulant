@@ -20,21 +20,21 @@
             wish_list : {}
         },
         methods: {
-            addVisit: function (index) {
+            addVisit: function (id) {
                 $.ajax({
                     type: "POST" ,
                     async: true ,
-                    url: `/api/restaurant/${index}`,
+                    url: `/api/restaurant/${id}`,
                     timeout: 3000
                 });
 
                 getWishList();
             },
-            deleteWish: function (index) {
+            deleteWish: function (id) {
                 $.ajax({
                     type: "DELETE" ,
                     async: true ,
-                    url: `/api/restaurant/${index}`,
+                    url: `/api/restaurant/${id}`,
                     timeout: 3000
                 });
                 getWishList();
